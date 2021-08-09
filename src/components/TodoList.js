@@ -1,13 +1,14 @@
 import React from "react";
-import "../App.css";
 import Todo from "./Todo";
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
   return (
     <div>
       <div className="todo-container">
         <ul className="todo-list">
-          <Todo />
+          {todos.map((todo) => (
+            <Todo text={todo.text} />
+          ))}
         </ul>
       </div>
     </div>
