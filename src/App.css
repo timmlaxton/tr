@@ -97,6 +97,7 @@ form button:hover {
 
 .todo-item {
   padding: 0rem 0.9rem;
+  width: 1%;
 }
 
 .fa-trash,
